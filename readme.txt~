@@ -17,6 +17,25 @@ OPTIONS:
   --version		output version information and exit
   
 When pywodim is ran as a python script, it can be used to burn a CD.
+
+While it may be useful as a stand-alone script, the main purpose of the 
+free-standing code is to offer a glimpse into a sample usage of the module 
+functions.
+
+The module provides the ability to query disc/drive status and to data 
+verification checks prior to burning and again after a burn to ensure a proper 
+burning.
+
+The pre-check assumes that there is an MD5 file in the same directory as the 
+ISO. This file should be the output of md5sum on the file in question.
+
+For instance, if you are attempting to burn test.iso, you must provide 
+test.iso.md5. You can get a file like this by running:
+md5sum test.iso --binary >> test.iso.md5
+
+The post-check was designed to be useful for testing Ubuntu CDs and thus assumes
+that the md5sum information lies in the root of the CD directory.
+
 It can also be used as a module for integrating into your own projects.
 See the listing of module functions and read the source for more information.
   
@@ -68,9 +87,9 @@ isMediaInserted(device)
 isTrayOpen(device)
 openTray(device="")
 queryDisc(device)
-
 queryDrive(device)
 verifyDisc(mountPoint)
 verifyImage(isoFile, md5File)
 waitForDiscMount(device, maxWait=0)
 waitForMedia(device, maxWait=0)
+
