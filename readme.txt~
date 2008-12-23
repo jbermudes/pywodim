@@ -2,6 +2,15 @@ PyWodim - A python module for the linux CD burning program wodim
 Author: Jess Bermudes
 
 =======================
+ License
+=======================
+
+Copyright (C) 2008 Jess Bermudes"
+License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extend permitted by law.
+
+=======================
  Usage 
 =======================
 

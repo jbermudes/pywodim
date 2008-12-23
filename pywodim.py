@@ -3,6 +3,11 @@
 #******************************************************************************
 #	PyWodim - Python wodim Module
 #
+#	Copyright (C) 2008 Jess Bermudes
+#	License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
+#	This is free software: you are free to change and redistribute it.
+#	There is NO WARRANTY, to the extend permitted by law.
+#
 #
 #	Author: Jess Bermudes
 #	Email: jbermudes@gmail.com
@@ -458,7 +463,7 @@ def getMediaChangedState(device):
 def printVersion():
 	print "pywodim" + __version__
 	print "Copyright (C) 2008 Jess Bermudes"
-	print "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>"
+	print "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>"
 	print "This is free software: you are free to change and redistribute it."
 	print "There is NO WARRANTY, to the extend permitted by law."
 	print
